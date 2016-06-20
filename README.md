@@ -3,7 +3,12 @@ Compile libnet under cygwin(static)
 
 
 ##Configure
-./configure --enable-static --prefix=/path/to/libnet CFLAGS="$CFLAGS -I /cygdrive/c/WpdPack/Include/" LIBS="$LIBS -lwsock32 -lws2_32 -liphlpapi -lwpcap -lpacket"
+
+```
+./configure --enable-static --prefix=/path/to/libnet \
+    CFLAGS="$CFLAGS -I /cygdrive/c/WpdPack/Include/" \
+    LIBS="$LIBS -lwsock32 -lws2_32 -liphlpapi -lwpcap -lpacket"
+```
 
 > **LIBS="$LIBS -lwsock32 -lws2_32 -liphlpapi -lwpcap -lpacket"** very important.
 
